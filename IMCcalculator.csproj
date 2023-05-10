@@ -1,17 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>Exe</OutputType>
-    <TargetFramework>net5.0</TargetFramework>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <Reference Include="Colorir">
-      <HintPath>..\Bibliotecas\Colorir\obj\Debug\net5.0\Colorir.dll</HintPath>
-    </Reference>
-    <Reference Include="Ferramentas">
-      <HintPath>..\Bibliotecas\Ferramentas\bin\Debug\net5.0\Ferramentas.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net5.0</TargetFramework>
+		<PublishSingleFile>true</PublishSingleFile>
+		<SelfContained>true</SelfContained>
+		<RuntimeIdentifier>win-x64</RuntimeIdentifier>
+	</PropertyGroup>
 
 </Project>

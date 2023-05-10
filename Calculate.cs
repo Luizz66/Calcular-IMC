@@ -1,6 +1,5 @@
 ﻿using System;
-using static Colorir.Color;
-using static Ferramentas.Printar;
+using static IMCcalculator.Ferramentas;
 
 namespace IMCcalculator
 {
@@ -16,12 +15,13 @@ namespace IMCcalculator
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
             ColorLine($"Vamos calcular o seu índice de massa corporal\n\n\n", ConsoleColor.White);
             print_("Digite seu Nome: ");
-            //oieo
-            nome = Console.ReadLine();
-            
-            print_("\nDigite o seu peso: ");
             var entrada = Console.ReadLine();
+            nome = entrada.Substring(0, 1).ToUpper() + entrada.Substring(1);
+
+            print_("\nDigite o seu peso: ");
+            entrada = Console.ReadLine();
             peso = int.Parse(entrada);
+
 
             print_("\nDigite sua altura: ");
             entrada = Console.ReadLine();
