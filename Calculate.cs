@@ -16,8 +16,9 @@ namespace IMCcalculator
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
             ColorLine($"Vamos calcular o seu índice de massa corporal\n\n\n", ConsoleColor.White);
             print_("Digite seu Nome: ");
+            //oieo
             nome = Console.ReadLine();
-
+            
             print_("\nDigite o seu peso: ");
             var entrada = Console.ReadLine();
             peso = int.Parse(entrada);
