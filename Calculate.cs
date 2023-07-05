@@ -1,7 +1,7 @@
 ﻿using System;
 using static IMCcalculator.Ferramentas;
 
-namespace IMCcalculator
+namespace IMC
 {
     static class Calculate
     {
@@ -11,7 +11,7 @@ namespace IMCcalculator
             int peso;
             float altura, imc;
             string margem = new('_', 90);
-
+            
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
             ColorLine($"Vamos calcular o seu índice de massa corporal\n\n\n", ConsoleColor.White);
             print_("Digite seu Nome: ");
