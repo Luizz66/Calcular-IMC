@@ -1,5 +1,5 @@
 ﻿using System;
-using static IMCcalculator.Ferramentas;
+using static Biblioteca.Ferramentas;
 
 namespace IMC
 {
@@ -21,7 +21,6 @@ namespace IMC
             print_("\nDigite o seu peso: ");
             entrada = Console.ReadLine();
             peso = int.Parse(entrada);
-
 
             print_("\nDigite sua altura: ");
             entrada = Console.ReadLine();
