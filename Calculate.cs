@@ -8,19 +8,16 @@ namespace IMC
         static void Main()
         {
             string nome;
-            int peso;
-            float altura, imc;
-            string margem = new('_', 90);
+            float altura, peso, imc;           
             
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
             ColorLine($"Vamos calcular o seu índice de massa corporal\n\n\n", ConsoleColor.White);
             print_("Digite seu Nome: ");
             var entrada = Console.ReadLine();
-            nome = entrada.Substring(0, 1).ToUpper() + entrada.Substring(1);
+            nome = entrada.Substring(0, 1).ToUpper() + entrada.Substring(1).ToLower();
 
             print_("\nDigite o seu peso: ");
-            entrada = Console.ReadLine();
-            peso = int.Parse(entrada);
+            peso = float.Parse(Console.ReadLine());
 
             print_("\nDigite sua altura: ");
             entrada = Console.ReadLine();
@@ -35,6 +32,7 @@ namespace IMC
             print("\n\n\n");
 
             imc = peso / (altura * altura);
+            imc = (float)Math.Round(imc, 1);
 
             string espaço = new(' ', 7);
             string space2x = new(' ', 15);
@@ -80,7 +78,7 @@ namespace IMC
             {
                 print(", lembrando que, ter um IMC dentro do Normal ajuda a evitar o aparecimento de várias doenças crônicas, como diabetes e hipertensão.");
             }
-            print($"\n\n{margem}");
+            print($"\n\n{new string('_', 90)}");
             Console.ReadKey();
             
 
