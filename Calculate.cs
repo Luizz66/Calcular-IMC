@@ -8,8 +8,8 @@ namespace IMC
         static void Main()
         {
             string nome;
-            float altura, peso, imc;           
-            
+            float altura, peso, imc;
+
             Console.BackgroundColor = ConsoleColor.DarkMagenta;
             ColorLine($"Vamos calcular o seu índice de massa corporal\n\n\n", ConsoleColor.White);
             print_("Digite seu Nome: ");
@@ -80,7 +80,8 @@ namespace IMC
             }
             print($"\n\n{new string('_', 90)}");
             Console.ReadKey();
-            
+            Console.WriteLine("oi");
+
 
         }
     }
