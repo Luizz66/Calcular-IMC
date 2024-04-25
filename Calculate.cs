@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using static Biblioteca.Ferramentas;
 
 namespace IMC
@@ -14,7 +15,8 @@ namespace IMC
             ColorLine($"Vamos calcular o seu índice de massa corporal\n\n\n", ConsoleColor.White);
             print_("Digite seu Nome: ");
             var entrada = Console.ReadLine();
-            nome = entrada.Substring(0, 1).ToUpper() + entrada.Substring(1).ToLower();
+
+            nome = FormatTxt(entrada);
 
             print_("\nDigite o seu peso: ");
             peso = float.Parse(Console.ReadLine());
