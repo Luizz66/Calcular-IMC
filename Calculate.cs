@@ -79,9 +79,8 @@ namespace IMC
                 print(", lembrando que, ter um IMC dentro do Normal ajuda a evitar o aparecimento de várias doenças crônicas, como diabetes e hipertensão.");
             }
             print($"\n\n{new string('_', 90)}");
-            Console.ReadKey();
-            Console.WriteLine("oi");
 
+            Console.ReadKey();           
 
         }
     }
